@@ -1,5 +1,9 @@
-def reverse_each_word
-  ("hello, how are you doing")
-  
-  puts {hello, there how are you?}
+def reverse_each_word(sentence)
+  sentence.split.collect {|word| word.reverse}.join(" ")
 end
+
+# Without iterating:
+
+# def reverse_each_word(sentence)
+#  sentence.reverse.split.reverse.join(" ")
+# end
